@@ -5,23 +5,38 @@ It is a basic Node.js backend application that allows users to perform CRUD (Cre
 Structure: 
 
 Me-API Playground/
+
 │
+
 ├── index.js                  # Main entry point for your Express server
+
 ├── package.json              # Project metadata and dependencies
+
 ├── swagger.js                # Swagger/OpenAPI setup for API documentation
+
 │
+
 ├── controller/
+
 │   └── profileControl.js     # Controller logic for profile routes (CRUD, search, etc.)
+
 │
 ├── models/
+
 │   └── profile.js            # Mongoose schema/model for profile documents
+
 │
 ├── routes/
+
 │   └── profileroute.js       # Express router for profile-related endpoints
+
 │
 ├── client/
+
 │   └── index.html            # Minimal HTML UI for interacting with your API
+
 │
+
 └── Playground.postman_collection.json # Postman collection for API testing
 
 
