@@ -59,27 +59,49 @@ Example: GET '/profiles/68c252bc4816d27ac5278834'
 Example: 
 {
   "name": "Dhruv Agarwal",
+
   "email": "dhruvagar135@gmail.com",
+
   "education": "B.Tech Computer Science",
+
   "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "Nest.js", "GraphQL", "Postman", "Swagger", "REST API"],
+
   "projects": [
+
     {
+
       "title": "Book Management System",
+
       "description": "It is a Node.js backend application that allows users to perform CRUD (Create, Read, Update, 
+
                       Delete) operations on a collection of books stored in a MongoDB database. 
+
                       Features - 
+
                       Pagination for listing items 
+
                       Search functionality by title or author/director 
+
                       API documentation with Swagger",
+
       "links": ["https://github.com/DhruvX123/REST-API-USING-NodeJS-MongoDB-ExpressJS"]
+
     }
+
   ],
+
   "work": ["Software Developer Intern at Information Data Systems"],
+
   "links": {
+
     "github": "https://github.com/DhruvX123",
+
     "linkedin": "https://www.linkedin.com/in/dhruv-agarwal-412164176/",
+
     "portfolio": "https://drive.google.com/file/d/1VAEvkr1EY_OmeA2uE9QIur5cuC3VDjdu/view?usp=drivesdk"
+
   }
+
 }
 
 • PUT /profiles/
