@@ -1,14 +1,14 @@
 
 # ME - API Playground
-It is a simple Node.js backend application that allows users to perform CRUD (Create, Read, Update, Delete) operations on a collection of books stored in a MongoDB database. The application includes additional features such as pagination and search functionality.
+It is a basic Node.js backend application that allows users to perform CRUD (Create, Read, Update, Delete) operations and store your own information in MongoDB database. The application includes additional features such as pagination and search functionality.
 
 - Features
 
-• CRUD operations: Create, Read, Update, Delete items
+• CRUD operations: Create, Read, Update, Delete Profile
 
-• Pagination for listing items
+• Pagination for listing Profiles
 
-• Search functionality by title or author/director
+• Search functionality by skill
 
 • API documentation with Swagger
 
