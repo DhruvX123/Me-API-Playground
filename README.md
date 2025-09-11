@@ -23,7 +23,7 @@ It is a basic Node.js backend application that allows users to perform CRUD (Cre
 - Installation
 
 Clone the repository:
-git clone https://github.com/DhruvX123/REST-API-USING-NodeJS-MongoDB-ExpressJS.git
+git clone https://github.com/DhruvX123/Me-API-Playground
 
 cd REST-API-USING-NodeJS-MongoDB-ExpressJS
 
