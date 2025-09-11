@@ -31,11 +31,6 @@ Me-API Playground/
 │   └── profileroute.js       # Express router for profile-related endpoints
 
 │
-├── client/
-
-│   └── index.html            # Minimal HTML UI for interacting with your API
-
-│
 
 └── Playground.postman_collection.json # Postman collection for API testing
 
