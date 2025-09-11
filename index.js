@@ -6,6 +6,8 @@ const swagger = require('./swagger');
 
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = 'mongodb+srv://dhruv135:dhruvagarwal135@cluster0.nwftnpn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
