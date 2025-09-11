@@ -23,9 +23,9 @@ It is a basic Node.js backend application that allows users to perform CRUD (Cre
 - Installation
 
 Clone the repository:
-git clone https://github.com/DhruvX123/Me-API-Playground
+git clone https://github.com/DhruvX123/Me-API-Playground.git
 
-cd REST-API-USING-NodeJS-MongoDB-ExpressJS
+cd Me-API-Playground
 
 Install dependencies:
 npm install
@@ -33,7 +33,7 @@ npm install
 Set up MongoDB:
 
 Local MongoDB instance:
-Ensure that MongoDB is installed and running on your local machine. By default, the application connects to mongodb://localhost:27017/itemdb.
+Ensure that MongoDB is installed and running on your local machine. By default, the application connects to mongodb://localhost:27017/profiledb.
 
 Start the server:
 
@@ -42,43 +42,61 @@ The server will start on http://localhost:3000.
 
 - API Endpoints
 
-• GET /items
+• GET /profiles
 
-Fetch a list of all items with optional pagination and search query parameters.
+Fetch a list of all profiles with optional pagination and search query parameters.
 
-Example: GET '/items?page=1&limit=1&title=mockingbird'
+Example: GET '/profiles?skills=Node'
 
-• GET /items/
+• GET /profiles/:id
 
-Fetch a single item by its ID.
+Fetch a single profile by its ID.
 
-Example: GET '/items/60d2c6b7e87a3a3b5c71c416'
+Example: GET '/profiles/68c252bc4816d27ac5278834'
 
-• POST /items
+• POST /profiles
 
 Example: 
 {
-  "title": "The Great Gatsby",
-  "authorOrDirector": "F. Scott Fitzgerald",
-  "description": "A novel set in the Jazz Age that tells the story of Jay Gatsby's love for Daisy Buchanan.",
-  "releaseDate": "1925-04-10"
+  "name": "Dhruv Agarwal",
+  "email": "dhruvagar135@gmail.com",
+  "education": "B.Tech Computer Science",
+  "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "Nest.js", "GraphQL", "Postman", "Swagger", "REST API"],
+  "projects": [
+    {
+      "title": "Book Management System",
+      "description": "It is a Node.js backend application that allows users to perform CRUD (Create, Read, Update, 
+                      Delete) operations on a collection of books stored in a MongoDB database. 
+                      Features - 
+                      Pagination for listing items 
+                      Search functionality by title or author/director 
+                      API documentation with Swagger",
+      "links": ["https://github.com/DhruvX123/REST-API-USING-NodeJS-MongoDB-ExpressJS"]
+    }
+  ],
+  "work": ["Software Developer Intern at Information Data Systems"],
+  "links": {
+    "github": "https://github.com/DhruvX123",
+    "linkedin": "https://www.linkedin.com/in/dhruv-agarwal-412164176/",
+    "portfolio": "https://drive.google.com/file/d/1VAEvkr1EY_OmeA2uE9QIur5cuC3VDjdu/view?usp=drivesdk"
+  }
 }
 
-• PUT /items/
+• PUT /profiles/
 
-Update an existing item by its ID.
+Update an existing profile by its ID.
 
-Example: PUT '/items/60d2c6b7e87a3a3b5c71c416'
+Example: PUT '/profiles/60d2c6b7e87a3a3b5c71c416'
 
-• DELETE /items/
+• DELETE /profiles/
 
-Delete an item by its ID.
+Delete profile by its ID.
 
-Example: DELETE '/items/60d2c6b7e87a3a3b5c71c416'
+Example: DELETE '/profiles/60d2c6b7e87a3a3b5c71c416'
 
 - Additional Feature
 
-I have implemented Swagger dependency in the API. It is a framework in which we can test our REST APIs for different HTTP requests i.e. :
+I have implemented Swagger UI in the API. It is a framework in which we can test our REST APIs for different HTTP requests i.e. :
 
 GET
 
@@ -88,10 +106,16 @@ PUT
 
 DELETE
 
-Swagger documentation is available at 'http://localhost:3000/api-docs'. You can use this interface to explore and test the API endpoints.
+Swagger UI is available at 'http://localhost:3000/api-docs'. You can use this interface to explore and test the API endpoints.
 
 - Bonus Implemented
 
-Pagination: The GET '/items' endpoint supports pagination through the 'page' and 'limit' query parameters.
+A GET /health endpoint has been added for liveness checks.
 
-Search Functionality: The GET '/items' endpoint supports searching by 'title' and 'authorOrDirector' through query parameters.
+Pagination: The GET '/profiles' endpoint supports pagination through the 'page' and 'limit' query parameters.
+
+Search Functionality: The GET '/profiles' endpoint supports searching by 'Skills' through query parameters.
+
+
+Resume - https://drive.google.com/file/d/1VAEvkr1EY_OmeA2uE9QIur5cuC3VDjdu/view?usp=drivesdk
+
