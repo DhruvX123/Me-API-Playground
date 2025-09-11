@@ -58,6 +58,7 @@ Example: GET '/profiles/68c252bc4816d27ac5278834'
 
 Example: 
 {
+
   "name": "Dhruv Agarwal",
 
   "email": "dhruvagar135@gmail.com",
