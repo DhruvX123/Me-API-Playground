@@ -7,7 +7,7 @@ const swagger = require('./swagger');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = 'mongodb://localhost:27017/profiledb';
+const MONGO_URI = 'mongodb+srv://dhruv135:dhruvagarwal135@cluster0.nwftnpn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected...'))
@@ -15,7 +15,16 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use(bodyParser.json());
 app.use('/profiles', profileRoute);
+
 app.use('/api-docs', swagger.swaggerUi.serve, swagger.swaggerUi.setup(swagger.specs));
+
+// Redirect root URL to Swagger UI
+app.get('/', (req, res) => {
+    res.redirect('/api-docs');
+});
+
+const cors = require('cors');
+app.use(cors());
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
