@@ -17,6 +17,10 @@ app.use(bodyParser.json());
 app.use('/profiles', profileRoute);
 
 app.use('/api-docs', swagger.swaggerUi.serve, swagger.swaggerUi.setup(swagger.specs));
+app.get('/', (req, res) => {
+    res.redirect('/api-docs');
+});
+
 
 // Redirect root URL to Swagger UI
 app.get('/', (req, res) => {
