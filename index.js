@@ -23,12 +23,6 @@ app.get('/', (req, res) => {
     res.redirect('/api-docs');
 });
 
-
-// Redirect root URL to Swagger UI
-app.get('/', (req, res) => {
-    res.redirect('/api-docs');
-});
-
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
