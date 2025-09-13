@@ -165,6 +165,10 @@ DELETE
 
 Swagger UI is available at 'http://localhost:3000/api-docs'. You can use this interface to explore and test the API endpoints.
 
+Or you can directly go through the project using the link - https://me-api-playground-sq7l.onrender.com/api-docs/#/
+
+I have deployed the project on live server. 
+
 - Bonus Implemented
 
 A GET /health endpoint has been added for liveness checks.
