@@ -8,7 +8,7 @@ const swagger = require('./swagger');
 const app = express();
 const cors = require('cors');
 app.use(cors());
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const MONGO_URI = 'mongodb+srv://dhruv135:dhruvagarwal123@cluster0.cotlcgn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
