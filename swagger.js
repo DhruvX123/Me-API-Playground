@@ -11,7 +11,7 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:10000',
+                url: 'https://me-api-playground-sq7l.onrender.com',
             },
         ],
     },
